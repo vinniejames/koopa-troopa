@@ -1,5 +1,13 @@
 # Shell Commands Cheatsheet 🐢
 
+## Verify Checksum
+
+SHA-256: `shasum -a 256 ~/Downloads/verifyMe.zip`
+
+MD5: `md5 ~/Downloads/verifyMe.zip`
+
+
+
 ### Find
 List files by creation:
 
