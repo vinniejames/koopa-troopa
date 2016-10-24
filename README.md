@@ -1,12 +1,20 @@
 # Shell Commands Cheatsheet 🐢
 
-## Verify Checksum
+### Verify Checksum
 
 SHA-256: `shasum -a 256 ~/Downloads/verifyMe.zip`
 
 MD5: `md5 ~/Downloads/verifyMe.zip`
 
+### Multi-line write to file
 
+```
+cat > /path/to/new/file.ext << EOF
+// one
+// two
+// three
+EOF
+```
 
 ### Find
 List files by creation:
