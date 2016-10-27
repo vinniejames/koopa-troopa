@@ -49,7 +49,7 @@ Show number of files a string occurs in recursively
 
 Find and replace string in files recursively in directory:
 
-`find folder/name/to/search -type f  -exec sed -i '' -e 's/RegExStringToFind/RegExsStringToReplace/g' {} \;`
+`find folder/name/to/search -type f  -exec LC_ALL=C sed -i '' -e 's/RegExStringToFind/RegExsStringToReplace/g' {} \;`
 
 ### Cron Jobs
 To view:
