@@ -1,5 +1,10 @@
 # Shell Commands Cheatsheet 🐢
 
+### Check for cache hits
+
+Check cache status: `curl -svo /dev/null https://url.to/test`
+Purge doc from Fastly: `curl -X PURGE https://url.to/purge/`
+
 ### Verify Checksum
 
 SHA-256: `shasum -a 256 ~/Downloads/verifyMe.zip`
