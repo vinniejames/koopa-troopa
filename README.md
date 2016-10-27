@@ -3,6 +3,7 @@
 ### Check for cache hits
 
 Check cache status: `curl -svo /dev/null https://url.to/test`
+
 Purge doc from Fastly: `curl -X PURGE https://url.to/purge/`
 
 ### Verify Checksum
