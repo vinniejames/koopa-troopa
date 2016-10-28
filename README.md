@@ -128,6 +128,9 @@ Copy file into running vagrant vm:
 ### List folder sizes
 `du -sh *`
 
+### copy folder
+`cp -rf /source/path/ /destination/path/`
+
 ### Quick Empty trash
 `rm -rf ~/.Trash/*`
 
