@@ -1,5 +1,23 @@
 # Shell Commands Cheatsheet 🐢
 
+## Docker
+
+### Build image in current Dockerfile dir
+
+`docker build -t docker-image-name .`
+
+### Run container, expose and publish local:8080 and map to container:80
+
+`docker run -p 8080:80 container_name`
+
+### Run container with mapped local src folder
+
+`docker run -v /Path/to/dev/folder:/var/www/html -p 8080:80 named-image`
+
+### Enter bash shell for container
+`docker exec -it container_name /bin/bash`
+
+
 ### Check for cache hits
 
 Check cache status: `curl -svo /dev/null https://url.to/test`
