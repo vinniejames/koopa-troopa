@@ -16,7 +16,7 @@
 
 ### Run container with mapped local src folder
 
-`docker run -v /Path/to/dev/folder:/var/www/html -p 8080:80 named-image`
+`docker run -v /Path/to/dev/folder:/var/www/html -p 8080:80 --sig-proxy=false named-image`
 
 ### Enter bash shell for container
 `docker exec -it container_name /bin/bash`
