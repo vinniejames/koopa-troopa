@@ -1,5 +1,9 @@
 # Shell Commands Cheatsheet 🐢
 
+### VIM save w/o sudo
+
+`:w !sudo tee %`
+
 ## Docker
 
 ### Build image in current Dockerfile dir
