@@ -92,6 +92,30 @@ MAILTO=your-email@gmail.com
 `alias storm='open /Applications/WebStorm.app'`
 
 ### Vagrant
+
+Add localhost TLS
+
+[Create self-signed OpenSSL certificate](https://www.njimedia.com/local-development-with-ssl-tls-p2/), and mount to VM directory, eg `$local/cert >> $vagrant/var/www/cert`
+
+Enable SSL in Apache config `/etc/apache2/sites-enabled/default-ssl.conf`
+
+```
+#   SSL Engine Switch:
+#   Enable/Disable SSL for this virtual host.
+SSLEngine on
+
+#   A self-signed (snakeoil) certificate can be created by installing
+#   the ssl-cert package. See
+#   /usr/share/doc/apache2/README.Debian.gz for more info.
+#   If both key and certificate are stored in the same file, only the
+#   SSLCertificateFile directive is needed.
+#SSLCertificateFile     /etc/ssl/certs/ssl-cert-snakeoil.pem
+#SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+SSLCertificateFile      /var/www/cert/domain_dev.crt
+SSLCertificateKeyFile   /var/www/cert/domain_dev.key
+
+```
+
 SSH into vagrant box:
 `vagrant ssh`
 
