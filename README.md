@@ -1,5 +1,19 @@
 # Shell Commands Cheatsheet 🐢
 
+### Git cherry pick
+
+eg next-master commits need to be saved for later
+
+`git checkout master -b on-hold-changes-branch`
+
+`git cherry-pick olderCOmmitHash^..newerCommitHash` inclusive branches (repeat for another range of commits)
+
+`git checkout next-master`
+
+`git revert olderCOmmitHash^..newerCommitHash`
+
+`git push origin next-master` will open a commit message dialouge for each revert
+
 ### VIM save w/o sudo
 
 `:w !sudo tee %`
