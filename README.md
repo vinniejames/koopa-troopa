@@ -63,9 +63,9 @@ disable expansion by quoting the here-doc delimiter
 
 ```
 cat > /path/to/new/file.ext << 'HERE'
-// one
-// two
-// three
+$keep
+$dollar
+$signs
 HERE
 ```
 
