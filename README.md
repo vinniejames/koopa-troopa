@@ -67,6 +67,7 @@ cat > /path/to/new/file.ext << 'HERE'
 // two
 // three
 HERE
+```
 
 ### Find
 List files by creation:
