@@ -58,6 +58,16 @@ cat > /path/to/new/file.ext << EOF
 EOF
 ```
 
+OR
+disable expansion by quoting the here-doc delimiter
+
+```
+cat > /path/to/new/file.ext << 'HERE'
+// one
+// two
+// three
+HERE
+
 ### Find
 List files by creation:
 
