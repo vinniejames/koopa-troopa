@@ -1,5 +1,13 @@
 # Shell Commands Cheatsheet 🐢
 
+### AWS
+
+Download S3 bucket to local `aws s3 sync s3://bucketName localFolder/path`
+
+Upload sync local to S3 `aws s3 sync localFolder/path s3://bucketName`
+
+Upload sync with delete `aws s3 sync localFolder/path s3://bucketName --delete`
+
 ### Git cherry pick
 
 eg next-master commits need to be saved for later
