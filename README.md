@@ -1,5 +1,11 @@
 # Shell Commands Cheatsheet 🐢
 
+[Explain Shell :)](https://www.explainshell.com)
+
+### Static Site Backup
+
+`wget -P /path/to/destination/directory/ -mpck --user-agent="" -e robots=off --wait 1 -E https://www.example.com/`
+
 ### AWS
 
 Download S3 bucket to local `aws s3 sync s3://bucketName localFolder/path`
