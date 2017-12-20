@@ -4,6 +4,12 @@
 
 [Just enough](http://alexpetralia.com/posts/2017/6/26/learning-linux-bash-to-get-things-done)
 
+### Logging stdout and stderr
+
+[`python script.py 2>&1 | tee output.log`](https://stackoverflow.com/a/418899/1580610)
+
+[`script output.log; python script.py`](https://explainshell.com/explain?cmd=script+output.log%3B+python+script.py)
+
 ### Static Site Backup
 
 `wget -P /path/to/destination/directory/ -mpck --user-agent="" -e robots=off --wait 1 -E https://www.example.com/`
