@@ -102,6 +102,17 @@ find text files that were last modified 60 days ago:
 
 http://www.cyberciti.biz/faq/howto-finding-files-by-date/
 
+Recursively delete all files of a name or specific extension in the current directory
+
+`find . -name "*.bak" -type f`
+
+to see exactly which files you will remove
+
+Then add `-delete` flag
+
+`find . -name "*.bak" -type f -delete`
+
+
 ### Search
 GREP
 search all files and folders recursivley, \ escapes “.”
@@ -226,6 +237,22 @@ Copy file into running vagrant vm:
 
 ### Quick Empty trash
 `rm -rf ~/.Trash/*`
+
+### Secure Erase Empty Space
+
+`diskutil secureErase freespace (level 0-4) /Volumes/(Drive Name)`
+
+(level 0-4) is a number indicating the number of passes to write to the free space
+
+Levels:
+
+  - 0 – Single-pass zero-fill erase.
+  - 1 – Single-pass random-fill erase.
+  - 2 – US DoD 7-pass secure erase.
+  - 3 – Gutmann algorithm 35-pass secure erase.
+  - 4 – US DoE algorithm 3-pass secure erase.
+
+*Warning!* It’s critically important that you include the **`freespace`** portion of that command. If you don’t, diskutil will happily start securely erasing the entire disk
 
 ### Reset file permissions for WordPress or Webapp
 directories
