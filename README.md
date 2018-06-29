@@ -5,9 +5,14 @@
 [Just enough](http://alexpetralia.com/posts/2017/6/26/learning-linux-bash-to-get-things-done)
 
 ### Windows Power Shell
+
+[Set profiles](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6):
+
+Current user, Current Host	`$Home\[My]Documents\WindowsPowerShell`
+
 Mimic Unix commands in Power Shell
 http://superuser.com/questions/502374/equivalent-of-linux-touch-to-create-an-empty-file-with-powershell
-Make `touch` work
+Make `touch` work (this can be set in the user profile)
 
 `function touch {set-content -Path ($args[0]) -Value ($null)}`
 
