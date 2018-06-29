@@ -20,6 +20,8 @@ OR
 
 `New-Item -ItemType file example.txt`
 
+List all envvars `ls Env:`
+
 Access envvars `$Env:NAME`
 
 Set persistant envvars `setx NAME value`
