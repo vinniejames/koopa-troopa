@@ -8,7 +8,7 @@
 
 [Set profiles](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6):
 
-Current user, Current Host	`$Home\[My]Documents\WindowsPowerShell`
+Current user, Current Host	`$Home\[My]Documents\WindowsPowerShell\Profile.ps1`
 
 Mimic Unix commands in Power Shell
 http://superuser.com/questions/502374/equivalent-of-linux-touch-to-create-an-empty-file-with-powershell
