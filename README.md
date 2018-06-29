@@ -4,6 +4,24 @@
 
 [Just enough](http://alexpetralia.com/posts/2017/6/26/learning-linux-bash-to-get-things-done)
 
+### Windows Power Shell
+Mimic Unix commands in Power Shell
+http://superuser.com/questions/502374/equivalent-of-linux-touch-to-create-an-empty-file-with-powershell
+Make `touch` work
+
+`function touch {set-content -Path ($args[0]) -Value ($null)}`
+
+OR
+
+`New-Item -ItemType file example.txt`
+
+Access envvars `$Env:NAME`
+
+Set persistant envvars `setx NAME value`
+
+Set session envvars `set NAME value`
+
+
 ### Logging stdout and stderr
 
 [`python script.py 2>&1 | tee output.log`](https://stackoverflow.com/a/418899/1580610)
@@ -297,13 +315,4 @@ to install the 0.10 version of Node.JS.
 You might also need to `brew unlink node`
 before you `brew install node010`
 
-### Windows Power Shell
-Mimic Unix commands in Power Shell
-http://superuser.com/questions/502374/equivalent-of-linux-touch-to-create-an-empty-file-with-powershell
-Make `touch` work
 
-`function touch {set-content -Path ($args[0]) -Value ($null)}`
-
-OR
-
-`New-Item -ItemType file example.txt`
