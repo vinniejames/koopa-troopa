@@ -29,6 +29,13 @@ Set persistant envvars `setx NAME value`
 Set session envvars `set NAME value`
 
 
+### Control operator `&`
+
+[ipfs daemon &](https://explainshell.com/explain?cmd=ipfs+daemon+%26)
+
+If a command is terminated by the control operator `&`, the shell executes the command in the background in
+a `subshell`.  The shell does not wait for the command to finish, and the return  status  is  `0`.
+
 ### Logging stdout and stderr
 
 [`python script.py 2>&1 | tee output.log`](https://stackoverflow.com/a/418899/1580610)
