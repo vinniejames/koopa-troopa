@@ -14,7 +14,7 @@ $ ipfs add -r ~/vinniejames`
 > ...
 > added QmYicLozp9LJTmMesPcKboX2wfbDAqcn4nb1zj24pm4Us5 vinniejames // <site hash>
 ```
-Vist `IPFS`: https://ipfs.io/ipfs/QmYicLozp9LJTmMesPcKboX2wfbDAqcn4nb1zj24pm4Us5
+Vist IP`F`S: https://ipfs.io/ipfs/QmYicLozp9LJTmMesPcKboX2wfbDAqcn4nb1zj24pm4Us5
 
 The last line will be the hash for your site: `<site hash>`
 
@@ -24,6 +24,8 @@ $ ipfs name publish <site hash> // QmYicLozp9LJTmMesPcKboX2wfbDAqcn4nb1zj24pm4Us
 > Published to QmUZUpvacpRdgSfaPze59SeRmFevdj3nKf4t3smJ1eFhLJ: // <peerID>
 > /ipfs/QmYicLozp9LJTmMesPcKboX2wfbDAqcn4nb1zj24pm4Us5
 ```
+
+Vist IP`N`S: https://ipfs.io/ipns/QmUZUpvacpRdgSfaPze59SeRmFevdj3nKf4t3smJ1eFhLJ
 
 Confirm resolution `<peerID>`
 ```
