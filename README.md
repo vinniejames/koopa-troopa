@@ -37,6 +37,7 @@ Set DNS:
 
 TXT `dnslink=/ipfs/<peerID>` <site hash> might work also
 
+Vist IP`N`S: https://ipfs.io/ipns/vinniejames.de
 
 ### Windows Power Shell
 
