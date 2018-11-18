@@ -4,6 +4,38 @@
 
 [Just enough](http://alexpetralia.com/posts/2017/6/26/learning-linux-bash-to-get-things-done)
 
+### [IPFS](https://medium.com/coinmonks/how-to-add-site-to-ipfs-and-ipns-f121b4cfc8ee)
+
+Start daemon: `ipfs daemon &`
+
+Add folder contents: 
+```
+$ ipfs add -r ~/vinniejames`
+> ...
+> added QmYicLozp9LJTmMesPcKboX2wfbDAqcn4nb1zj24pm4Us5 vinniejames // <site hash>
+```
+Vist `IPFS`: https://ipfs.io/ipfs/QmYicLozp9LJTmMesPcKboX2wfbDAqcn4nb1zj24pm4Us5
+
+The last line will be the hash for your site: `<site hash>`
+
+Publish / Resolve:
+```
+$ ipfs name publish <site hash> // QmYicLozp9LJTmMesPcKboX2wfbDAqcn4nb1zj24pm4Us5
+> Published to QmUZUpvacpRdgSfaPze59SeRmFevdj3nKf4t3smJ1eFhLJ: // <peerID>
+> /ipfs/QmYicLozp9LJTmMesPcKboX2wfbDAqcn4nb1zj24pm4Us5
+```
+
+Confirm resolution `<peerID>`
+```
+$ ipfs name resolve QmUZUpvacpRdgSfaPze59SeRmFevdj3nKf4t3smJ1eFhLJ // <peerId>
+> /ipfs/QmYicLozp9LJTmMesPcKboX2wfbDAqcn4nb1zj24pm4Us5 <site hash>
+```
+
+Set DNS:
+
+TXT `dnslink=/ipfs/<peerID>` <site hash> might work also
+
+
 ### Windows Power Shell
 
 [Set profiles](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6):
